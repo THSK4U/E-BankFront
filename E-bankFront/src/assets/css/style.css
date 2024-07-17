@@ -1,20 +1,20 @@
 /*=========================================
-                 INDEX             
+                 INDEX
 ===========================================
 //
-//             01 -- Variables        
-//             02 -- General          
-//             03 -- Components          
+//             01 -- Variables
+//             02 -- General
+//             03 -- Components
 //             04 -- Header
 //             05 -- hero
-//             06 -- About        
-//             07 -- Cta 
+//             06 -- About
+//             07 -- Cta
 //             08 -- Portfolio
 //             09 -- Breadcrumb
 //             10 -- Services
-//             11 -- Pricing         
-//             12 -- Login  
-//             13 -- Blog                           
+//             11 -- Pricing
+//             12 -- Login
+//             13 -- Blog
 //             14 -- Contact
 //             15 -- Team
 //             16 -- Faq
@@ -47,7 +47,6 @@
 ==============================================*/
 body {
   font-family: "Nunito", sans-serif;
-  overflow-x: hidden !important;
   font-size: 16px;
   color: #7f839c;
   font-weight: 400;
@@ -1216,7 +1215,9 @@ button:focus, input:focus, input:focus, textarea, textarea:focus {
 .acavo-nav .navbar .others-option .option-item .default-btn {
   margin-bottom: -6px;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 .navbar-area {
   position: absolute;
   background-color: transparent;
@@ -1226,7 +1227,6 @@ button:focus, input:focus, input:focus, textarea, textarea:focus {
   height: auto;
   z-index: 999;
   padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .navbar-area.is-sticky {
@@ -1808,11 +1808,13 @@ button:focus, input:focus, input:focus, textarea, textarea:focus {
 
 /*-- Hero 01 --*/
 .hero-1 {
-  padding: 170px 0px 98px;
+  padding: 150px 0px 98px;
   height: 100vh;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat !important;
+  overflow: hidden !important;
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1873,7 +1875,10 @@ button:focus, input:focus, input:focus, textarea, textarea:focus {
     margin-bottom: 10px;
   }
 }
-
+.title span{
+  font-size: 20px;
+  color: #ff4151 ;
+}
 .hero-1 .hero-1-content .title {
   font-size: 56px;
   line-height: 66px;
@@ -2198,7 +2203,7 @@ button:focus, input:focus, input:focus, textarea, textarea:focus {
 
 /*============================================
 
-                06 -- About 
+                06 -- About
 
 ==============================================*/
 .about-area .container-fluid {
@@ -2378,7 +2383,7 @@ button:focus, input:focus, input:focus, textarea, textarea:focus {
 
 /*============================================
 
-                    07 -- Cta 
+                    07 -- Cta
 
 ==============================================*/
 .cta-area {
@@ -2687,7 +2692,7 @@ button:focus, input:focus, input:focus, textarea, textarea:focus {
 
 /*============================================
 
-              09 -- Breadcrumb 
+              09 -- Breadcrumb
 
 ==============================================*/
 .banner-section {
@@ -3117,7 +3122,7 @@ button:focus, input:focus, input:focus, textarea, textarea:focus {
 
 /*============================================
 
-               12 -- Login 
+               12 -- Login
 
 ==============================================*/
 .login-page {
@@ -3357,7 +3362,7 @@ button:focus, input:focus, input:focus, textarea, textarea:focus {
 
 /*============================================
 
-                    13 -- Blog   
+                    13 -- Blog
 
 ==============================================*/
 .blog-area {
@@ -4007,7 +4012,7 @@ button:focus, input:focus, input:focus, textarea, textarea:focus {
 
 /*============================================
 
-              14 -- Contact Us 
+              14 -- Contact Us
 
 ==============================================*/
 .contact-section {
