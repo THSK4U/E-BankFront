@@ -1,0 +1,44 @@
+<div class="open-account-area pt-100 pb-100">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-8 col-md-12 mb-50">
+        <div class="section-title">
+          <h2 class="title">Account opening form</h2>
+          <div class="title-bdr">
+            <div class="left-bdr"></div>
+            <div class="right-bdr"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="open-account-form">
+      <form [formGroup]="accountForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="form-group">
+              <label>Account type</label>
+              <select formControlName="accountType" class="form-control">
+                <option value="Crédit">Crédit</option>
+                <option value="Débit">Débit</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="form-group">
+              <label>Balance</label>
+              <input type="text" formControlName="balance" class="form-control" placeholder="Balance">
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="banner-form-btn">
+              <button type="submit" class="default-btn">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
