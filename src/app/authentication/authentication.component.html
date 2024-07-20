@@ -1,0 +1,37 @@
+<!-- Login -->
+<div class="login-page d-flex align-items-center vh-100">
+  <div class="overlay"></div>
+  <div class="login-form">
+    <!-- Container -->
+    <div class="container">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="login-social-icon">
+          <h2>Login</h2>
+          <ul class="social-buttons">
+          </ul>
+        </div>
+
+        <div class="input-group">
+          <span class="login-form-icon"><i class="uil uil-user"></i></span>
+          <input type="text" formControlName="username" class="form-control" id="inputUsername" tabindex="1" placeholder="Username" required>
+        </div>
+
+        <div class="input-group">
+          <span class="login-form-icon"><i class="uil uil-lock"></i></span>
+          <input type="password" formControlName="password" class="form-control" id="inputPassword" tabindex="2" placeholder="Password" required>
+        </div>
+
+        <div class="row justify-content-center ">
+          <div class="justify-content-center ">
+            <button type="submit" class="btn theme-btn-1">Log In</button>
+          </div>
+        </div>
+
+        <div class="login-footer">Don't have an account? <a href='signup.html'>Signup</a>
+        </div>
+      </form>
+    </div>
+    <!-- Container -->
+  </div>
+</div>
+<!-- /login -->
