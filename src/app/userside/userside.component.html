@@ -1,0 +1,49 @@
+<!-- Header -->
+<div class="navbar-area">
+  <div class="acavo-responsive-nav">
+    <!-- Container -->
+    <div class="container">
+      <div class="acavo-responsive-menu">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="logo">
+        </div>
+      </div>
+    </div>
+    <!-- /Container -->
+  </div>
+  <div class="acavo-nav">
+    <!-- Container -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a class='navbar-brand' href='index.html'>
+          <img src="assets/images/logo.png" alt="logo">
+        </a>
+        <div class="collapse navbar-collapse mean-menu">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a [routerLink]="['/home/transfer']" class="nav-link">Transfer</a>
+
+            <li class="nav-item"><a [routerLink]="['/home/account']" class="nav-link">Account</a>
+
+            <li class="nav-item"><a [routerLink]="['/home/créercompte']" class="nav-link active">créer un compte</a>
+
+            </li>
+
+
+            <div class="others-option d-flex align-items-center">
+              <div class="option-item">
+                <a class='btn theme-btn-1' (click)="logout()">Loug out<i class="las la-angle-right"></i></a>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- /Container -->
+  </div>
+  <router-outlet></router-outlet>
+
+</div>
+
+
+
